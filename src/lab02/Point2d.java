@@ -1,6 +1,5 @@
 package lab02;
 
-
 public class Point2d {
     protected double xCoord;
     protected double yCoord;
