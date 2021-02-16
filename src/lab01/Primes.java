@@ -4,7 +4,7 @@ package lab01;
 public class Primes {
     public static void main(String[] args){
         for (int i = 2; i <= 100; i++){
-            if (isPrime(i) == true){
+            if (isPrime(i)){
                 System.out.print(i + " ");
             }
         }
