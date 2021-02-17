@@ -17,6 +17,7 @@ class Point3d extends Point2d{
         this(0, 0, 0);
     }
 
+    //set`еры и get`еры
     public double getZ () {
         return zCoord;
     }

@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Lab1 {
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        Point3d p1,p2,p3;
-        double coords[] = new double[9];
+        Scanner sc = new Scanner(System.in);        //сканер, для ввода с клавиатуры
+        Point3d p1,p2,p3;                           //объявление трёх объектов типа Point3d
+        double coords[] = new double[9];            //Массив, для сохранения коордиант точек
         for(int i=0;i<3;i++){
             System.out.println("Координаты для точки p"+(i+1));
             System.out.println("Координата х: ");
@@ -16,7 +16,7 @@ public class Lab1 {
             System.out.println("Координата z: ");
             coords[i*3+2]=sc.nextDouble();
         }
-        p1 = new Point3d(coords[0],coords[1],coords[2]);
+        p1 = new Point3d(coords[0],coords[1],coords[2]);        //Создание трёх объектов Point3d с объявленными координатами
         p2 = new Point3d(coords[3],coords[4],coords[5]);
         p3 = new Point3d(coords[6],coords[7],coords[8]);
         System.out.println("Первая точка с координатами x = "+p1.getX()+" y = "+p1.getY()+" z = "+p1.getZ());
@@ -40,8 +40,8 @@ public class Lab1 {
         distAB = a.distanceTo(b);
         distBC = b.distanceTo(c);
         distCA = c.distanceTo(a);
-        p = (distAB+distBC+distCA)/2.0;
-        res = Math.sqrt(p*(p-distAB)*(p-distBC)*(p-distCA));
+        p = (distAB+distBC+distCA)/2.0;                             //Полупериметр
+        res = Math.sqrt(p*(p-distAB)*(p-distBC)*(p-distCA));        //Формула Герона
         return res;
     }
 }
