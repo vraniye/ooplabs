@@ -1,7 +1,6 @@
 package lab02;
 
 class Point3d extends Point2d{
-
     //объявление новой координаты
     private double zCoord;
 
