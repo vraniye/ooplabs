@@ -7,8 +7,7 @@ class Point3d extends Point2d{
 
     //обновленный конструктор инициализации
     public Point3d ( double x, double y, double z) {
-        this.xCoord = x;
-        this.yCoord = y;
+        super(x, y);
         this.zCoord = z;
     }
 

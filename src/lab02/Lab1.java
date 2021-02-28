@@ -3,10 +3,10 @@ package lab02;
 import java.util.Scanner;
 
 public class Lab1 {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);        //сканер, для ввода с клавиатуры
         Point3d p1,p2,p3;                           //объявление трёх объектов типа Point3d
-        double coords[] = new double[9];            //Массив, для сохранения коордиант точек
+        double[] coords = new double[9];            //Массив, для сохранения коордиант точек
         for(int i=0;i<3;i++){
             System.out.println("Координаты для точки p"+(i+1));
             System.out.println("Координата х: ");
